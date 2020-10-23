@@ -246,3 +246,95 @@ a {
 .products__btn-suptitle {
     color: #FD83BD;
 }
+
+/* FLAVOR */
+
+.flavor{
+    width: 100%;
+}
+
+.flavor__wrap {
+    width: 644px;
+    height: 644px;
+    background-color: rgb(145, 105, 105);
+    position: relative;
+    margin: 0 auto;
+}
+
+.flavor__img{
+    width: 644px;
+    height: 644px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(147, 236, 119);
+}
+ 
+.flavor__notice {
+    position: absolute;
+}
+
+
+
+.flavor__round {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    background-color: rgb(1, 26, 250);
+}
+
+.flavor__desc {
+    max-width: 422px;
+    z-index: -10;
+}
+
+.first, .second, .third, .fourth {
+    /* position: absolute; */
+}
+
+.flavor__round {
+    position: absolute;
+}
+
+.icon-1 {
+    top: 37px;
+    right: 27px;
+}
+
+.icon-2{
+    top: 37px;
+    left: -29px;
+}
+
+.icon-3{
+    top: -37px;
+    right: -29px;
+}
+
+.icon-4{
+    top: -37px;
+    left: -29px;
+}
+
+
+
+.first {
+    top: 70px;
+    left: -192px;
+}
+
+.second {
+    top: 30px;
+    right: -193px;
+}
+
+.third {
+    bottom: 82px;
+    left: -192px;
+}
+
+.fourth {
+    bottom: 134px;
+    right: -193px;
+}
+
+
