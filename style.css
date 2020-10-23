@@ -20,6 +20,21 @@ a {
     /* background-color: gray; */
 }
 
+.mark {
+    color: #FF4B65;
+}
+
+.btn {
+    text-align: center;
+    font-size: 30px;
+    line-height:  106px;
+    width: 353px;
+    height: 106px;
+    background: radial-gradient(57.74% 90.4% at 50% -24.24%, #FD83BD 0%, #FF4B65 100%);
+    box-shadow: 0px 4px 0px #F20F30, 0px 32px 20px -25px rgba(255, 27, 60, 0.5), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 103px;
+}
+
 /* TOP */
 
 .top {
@@ -74,5 +89,66 @@ a {
 }
 
 .nav__item:hover{
+    color: #FF4B65;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+}
+
+.header__title {
+    width: 68.83%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.header__title, .header__title>.mark {
+    font-family: Alice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 120%;
+}
+
+.header__subsection {
+    width: 94.25%;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.header__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(566px - 29px);
+    height: 466px;
+    background-color: yellow;
+}
+
+
+.header__desc {
+    width: calc(50% + 148px);
+    padding-left: 148px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__subtitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 120%;
+}
+
+.header__delivery {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 65px;
     color: #FF4B65;
 }
