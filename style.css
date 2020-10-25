@@ -480,3 +480,50 @@ a {
     border-radius: 54px;
     background-color: blue;
 }
+
+/* ADVICE */
+
+.advice {
+    max-width: 1010px;
+    margin: 0 auto;
+}
+
+.advice__item{
+    display: flex;
+    margin: 40px 0;
+}
+
+.advice__item:nth-child(4){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+
+.advice__img {
+    width: 500px;
+    height: 370px;
+    margin-right: 50px;
+    border-radius: 25px;
+    background-color: yellow;
+}
+
+.advice__item:nth-child(4) > .advice__img {
+    margin-left: 50px;
+    margin-right: 0;
+}
+
+.advice__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 500px;
+    min-height: 370px;
+}
+
+.advice__desc > * {
+    font-size: 36px;
+}
+
+.advice__suptitle {
+    color: #FF4B65;
+}
