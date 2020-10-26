@@ -731,13 +731,42 @@ a {
     /* flex-grow: 1; */
 }
 
-.write {
-    /* flex-basis: 100%; */
-}
-
 .main-form__society {
     width: 23px;
     height: 23px;
     margin-left: 8px;
 }
 
+/* CLIENTS */
+
+
+.clients__title {
+    width: 780px;
+    height: 154px;
+}
+
+.clients__inner {
+    width: 303px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.clients__phone {
+    position: relative;
+}
+
+
+.clients__camera {
+    position: absolute;
+    top: 6.5px;
+    left: 8.5px;
+    z-index: 100;
+}
+
+.clients__screen {
+    position: absolute;
+    top: 19px;
+    left: 22px;
+    z-index: 1000;
+}
