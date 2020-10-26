@@ -316,6 +316,7 @@ a {
 .flavor__title {
     width: 1029px;
     color: black;
+    margin-top: 50px;
 }
 
 .flavor__title, .mark {
@@ -613,7 +614,7 @@ a {
 
 .fast-order__slider {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .fast-order__cart {
@@ -625,6 +626,7 @@ a {
     color: black;
     text-align: center;
     padding: 10px 8px;
+    margin: 7px;
 }
 
 .fast-order__img {
@@ -638,3 +640,104 @@ a {
     padding-bottom: 15px;
     border-bottom: 2px solid #E5E5E5;
 }
+
+/* MAIN-ORDER */
+
+.main-form {
+    display: flex;
+    color: #fff;
+    width: 1150px;
+    margin:  124px auto 70px auto;
+    background-color: #FD83BD;
+    padding: 50px;
+    border-radius: 25px;
+    /* background-image: linear-gradient (to top, rgba (89,106,114, 0.6), rgba (206,220,23, 0.4)), url(./fog.jpg); */
+}
+
+.main-form__left {
+    
+}
+
+.main-form__left .title{
+    width: 500px;
+    text-align: left;
+    line-height: 76.8px;
+    margin-bottom: 20px;
+}
+
+.main-form__desc {
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.main-form__right{
+    margin-left: 60px;
+}
+
+.main-form__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-form__input {
+    width: 230px;
+    height: 60px;
+    padding: 19px;
+    
+}
+
+.main-form__input:nth-child(1){
+    margin-right: 9px;
+}
+
+.main-form__input, .main-form__textarea{
+    border-radius: 5px;
+    border: none;
+    background-color: #F8F8F8;
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.main-form__textarea {
+    width: 469px;
+    height: 100px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.main-form__btn {
+    width: 230px;
+    height: 66px;
+    margin: 15px 36px 10px 0;
+    background: radial-gradient(57.74% 90.4% at 50% -24.24%, #FFFFFF 0%, #EEEEEE 100%);
+    box-shadow: 0px 4px 0px #C2C2C2, 0px 32px 20px -25px rgba(255, 255, 255, 0.5), inset 0px 4px 4px rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    border: none;
+    color:#FF4B65;
+    text-shadow: 1px 1px 0px #FFFFFF;
+}
+
+
+.main-form__contacts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-form__phone {
+    display: block;
+    font-size: 24px;
+    line-height: 120%;
+    width: 176px;
+    margin-top: 21px;
+    /* flex-grow: 1; */
+}
+
+.write {
+    /* flex-basis: 100%; */
+}
+
+.main-form__society {
+    width: 23px;
+    height: 23px;
+    margin-left: 8px;
+}
+
