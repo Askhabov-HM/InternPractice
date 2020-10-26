@@ -9,13 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- сделать отдельный общий класс для title секции -->
     <!-- TOP -->
     <section class="top">
         <div class="container">
             <div class="top__wrap">
                 <div class="top__wrap-right">
-                    <img src="" alt="" class="top__logo">
+                    <img src="./img/logo.png" alt="" class="top__logo">
                     <p class="top__title">Букеты из фруктов и ягод с доставкой по Москве</p>
                 </div>
                 <div class="top__wrap-left">
@@ -43,12 +42,15 @@
         <!-- add background -->
         <header class="header">
             <!-- пересмотреть h1 -->
-            <h1 class="header__title">Сделайте экзотичный подарок для неё: <span class="mark">Жене</span> </h1>
+            <h1 class="title header__title">Сделайте экзотичный подарок для неё: <span class="mark">Жене</span> </h1>
             <div class="header__subsection">
                 <img src="./img/букет-хедер.png" alt="" class="header__img">
                 <div class="header__desc">
                     <h2 class="header__subtitle">Авторские букеты из спелых ягод и фруктов</h2>
                     <a href="" class="btn">Подобрать подарок</a>
+                    <svg width="54" height="41" viewBox="0 0 54 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.4211 33.7143C20.4211 36.6335 18.0647 39 15.1579 39C12.2512 39 9.89478 36.6335 9.89478 33.7143M20.4211 33.7143C20.4211 30.7951 18.0647 28.4286 15.1579 28.4286C12.2512 28.4286 9.89478 30.7951 9.89478 33.7143M20.4211 33.7143H36.2106M9.89478 33.7143L4.63158 33.7143V23.1429M46.7369 33.7143C46.7369 36.6335 44.3805 39 41.4737 39C38.567 39 36.2106 36.6335 36.2106 33.7143M46.7369 33.7143C46.7369 30.7951 44.3805 28.4286 41.4737 28.4286C38.567 28.4286 36.2106 30.7951 36.2106 33.7143M46.7369 33.7143L52 33.7143V17.8571M2 2H30.9474V33.7143M52 17.8571H30.9474M52 17.8571L44.1053 4.64286H30.9474M4.63159 12.5714H15.1579" stroke="#FF4B65" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     <!--add icon before p  -->
                     <p class="header__delivery">Бесплатная доставка по Москве</p>
                 </div>
@@ -63,7 +65,7 @@
         <!-- добавить .slider__dots -->
         <!-- добавить стрелки -->
         <section class="products">
-            <h2 class="products__title">Что вы можете заказать в нашей фруктовой лавке?</h2>
+            <h2 class="title products__title">Что вы можете заказать в нашей фруктовой лавке?</h2>
             <div class="products__slider">
                 <div class="products__left">
                     <img src="./img/букет-слайдер.png" alt="" class="products__img">
@@ -106,7 +108,7 @@
     </div>
     <div class="container">
         <section class="flavor">
-            <h2 class="flavor__title">Букетом цветов уже <span class="mark">не удивишь</span>
+            <h2 class="title flavor__title">Букетом цветов уже <span class="mark">не удивишь</span>
                 А у нас:</h2>
             <!--стоит ли менять классы first__notice на nth-child(1) и т.д ???  -->
             <div class="flavor__wrap">
@@ -176,7 +178,7 @@
         <!-- Правильные вертикальные отступы у advice__desc -->
         <!-- вместо jsc-saround применить margin -->
         <section class="advice">
-            <h2 class="advice__title">Будьте оригинальными с My Market <br/><span>Мы советуем</span></h2>
+            <h2 class="title advice__title">Будьте оригинальными с My Market <br/><span>Мы советуем</span></h2>
             
             <div class="advice__item">
                 <img src="" alt="" class="advice__img">
@@ -204,7 +206,7 @@
     
     <section class="fast-order">
         <div class="container">
-            <h2 class="fast-order__title">Закажите прямо сейчас и мы доставим до двери</h2>
+            <h2 class="title fast-order__title">Закажите прямо сейчас и мы доставим до двери</h2>
             <p class="fast-order__subtitle">Доставка по Москве в пределах МКАД  бесплатно!</p>
             <div class="fast-order__slider">
                 <div class="fast-order__cart">
