@@ -884,3 +884,53 @@ a {
     color: #FD83BD !important;
     text-decoration: underline;
 }
+
+
+/* END */
+
+.end{
+    display: flex;
+    height: 570px;
+    flex-direction: column;
+    position: relative;
+}
+
+.end__title {
+    text-align-last: left;
+    margin-left: 0;
+    margin: 69px 0 20px 0;
+}
+
+.end__desc {
+    width: 612px;
+    height: 123px;
+    font-size: 36px;
+    line-height: 41px;
+    margin-bottom: 30px;
+}
+
+
+.end__desc span{
+    color: #FD83BD;
+    font-size: 36px;
+    line-height: 41px;
+    font-weight: bold;
+}
+
+.end__btn {
+    width: 336px;
+    height: 106px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.end__img {
+    width: 892px;
+    height: 570px;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* FOOTER */
