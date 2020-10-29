@@ -42,14 +42,13 @@
     <header class="header">
         <div class="container">
         <!-- add background -->
-            <!-- пересмотреть h1 -->
             <h1 class="title header__title">Сделайте экзотичный подарок для неё: <span class="mark">Жене</span> </h1>
             <div class="header__subsection">
-                <img src="./img/букет-хедер.png" alt="" class="header__img">
+                <!-- <img src="./img/букет-хедер.png" alt="" class="header__img"> -->
                 <div class="header__desc">
                     <h2 class="header__subtitle">Авторские букеты из спелых ягод и фруктов</h2>
                     <a href="" class="btn">Подобрать подарок</a>
-                    <svg width="54" height="41" viewBox="0 0 54 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="header__svg" width="54" height="41" viewBox="0 0 54 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.4211 33.7143C20.4211 36.6335 18.0647 39 15.1579 39C12.2512 39 9.89478 36.6335 9.89478 33.7143M20.4211 33.7143C20.4211 30.7951 18.0647 28.4286 15.1579 28.4286C12.2512 28.4286 9.89478 30.7951 9.89478 33.7143M20.4211 33.7143H36.2106M9.89478 33.7143L4.63158 33.7143V23.1429M46.7369 33.7143C46.7369 36.6335 44.3805 39 41.4737 39C38.567 39 36.2106 36.6335 36.2106 33.7143M46.7369 33.7143C46.7369 30.7951 44.3805 28.4286 41.4737 28.4286C38.567 28.4286 36.2106 30.7951 36.2106 33.7143M46.7369 33.7143L52 33.7143V17.8571M2 2H30.9474V33.7143M52 17.8571H30.9474M52 17.8571L44.1053 4.64286H30.9474M4.63159 12.5714H15.1579" stroke="#FF4B65" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     <!--add icon before p  -->
@@ -148,7 +147,7 @@
     <div class="container">
         <section class="order">
             <div class="order__form">
-                <h3 class="order__title">Наш флорист подберет для Вас подарок по цене, размеру и составу</h3>
+                <h3 class="order__title">Наш флорист <span class="order__title-bold">подберет</span> для Вас подарок по цене, размеру и составу</h3>
                 <div class="order__social">
                     <span class="order__suptitle">Выберите удобный способ связи</span>
                     <div class="order__wrap">
@@ -172,36 +171,42 @@
                 </form>
                 <p class="order__rules">Нажимая кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</p>
             </div>
-            <div class="order__img"></div>
+            <!-- временное решение-->
+            <div class="order__img">
+                <img src="./img/fast-order__img.png" alt="" class="order__img-bg">
+            </div>
         </section>
     </div>
     <div class="container">
         <!-- Правильные вертикальные отступы у advice__desc -->
         <!-- вместо jsc-saround применить margin -->
         <section class="advice">
-            <h2 class="title advice__title">Будьте оригинальными с My Market <br/><span>Мы советуем</span></h2>
-            
+            <h2 class="title advice__title">Будьте оригинальными с My Market <br/><span>Мы советуем:</span></h2>
+            <img src="./img/advice__border.svg" alt="" class="advice__border">
             <div class="advice__item">
-                <img src="" alt="" class="advice__img">
+                <img src="./img/advice-1.png" alt="" class="advice__img">
                 <div class="advice__desc">
                     <h3 class="advice__suptitle">Вкусное дополнение к дорогому подарку</h3>
                     <p class="advice__article">Ваши подарки любимым станут еще красивее и приятнее с оформление от My Market</p>
                 </div>
             </div>
+            <img src="./img/advice__border.svg" alt="" class="advice__border">
             <div class="advice__item">
-                <img src="" alt="" class="advice__img">
+                <img src="./img/advice-2.png" alt="" class="advice__img">
                 <div class="advice__desc">
                     <h3 class="advice__suptitle">Если надоели однообразные закуски </h3>
                     <p class="advice__article">Свежие нарезки и стаканчики с экзотическими фруктами сделают ваш фуршет или свадьбу особенными</p>
                 </div>
             </div>
+            <img src="./img/advice__border.svg" alt="" class="advice__border">
             <div class="advice__item">
-                <img src="" alt="" class="advice__img">
+                <img src="./img/advice-3.png" alt="" class="advice__img">
                 <div class="advice__desc">
                     <h3 class="advice__suptitle">Прекрасный романтический подарок </h3>
                     <p class="advice__article">Большинство наших продаж — подарки второй половинке. По вашей просьбе, мы напишем записку с вашим текстом на специальной красивой открытке</p>
                 </div>
             </div>
+            <img src="./img/advice__border.svg" alt="" class="advice__border">
         </section>
     </div>
     
