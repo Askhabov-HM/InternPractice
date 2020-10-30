@@ -10,6 +10,7 @@
 </head>
 <body>
     <!-- TOP -->
+    <!-- пересмотреть то как добавлен лист -->
     <section class="top">
         <div class="container">
             <div class="top__wrap">
@@ -56,53 +57,65 @@
     </header>
     <!-- PRODUCTS -->
         <!-- add bg-img -->
-        <!-- поменять .products__slider на .slider -->
-        <!-- добавить .slider__row -->
-        <!-- добавить .slider__dots -->
         <!-- добавить стрелки -->
     <section class="products">
         <div class="container">
             <h2 class="title products__title">Что вы можете заказать в нашей фруктовой лавке?</h2>
             <div class="products__slider">
-                <div class="products__left">
-                    <img src="./img/букет-слайдер.png" alt="" class="products__img">
-                    <div class="products__row">
-                        <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                        <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                        <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                        <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                        <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                    </div>
-                </div>
-                <div class="products__right">
-                    <h3 class="products__subtitle">Клубничный букет</h3>
-                    <p class="products__desc">«Подарок, который невозможно назвать банальным и невозможно не съесть»</p>
-                    <span class="products__variety">Возможный состав:</span>
-                    <div class="products__composition">
-                        <div class="products__composition-item">
-                            <img src="./img/berry.png" alt="">
-                            <span>Клубника</span>
-                        </div>
-                        <div class="products__composition-item">
-                            <img src="./img/berry.png" alt="">
-                            <span>Черника</span>
-                        </div>
-                        <div class="products__composition-item">
-                            <img src="./img/berry.png" alt="">
-                            <span>Мята</span>
-                        </div>
-                        <div class="products__composition-item">
-                            <img src="./img/berry.png" alt="">
-                            <span>Ежевика</span>
+                <div class="products__slider-item">
+                    <div class="products__left">
+                        <img src="./img/букет-слайдер.png" alt="" class="products__img">
+                        <div class="products__row">
+                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
+                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
+                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
+                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
+                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
                         </div>
                     </div>
-                    <a href="" class="btn">Подобрать букет с флористом</a>
-                    <!-- add icon before -->
-                    <span class="products__btn-suptitle">Закупаем свежие ягоды каждое утро</span>
+                    <div class="products__right">
+                        <h3 class="products__subtitle">Клубничный букет</h3>
+                        <p class="products__desc">«Подарок, который невозможно назвать банальным и невозможно не съесть»</p>
+                        <span class="products__variety">Возможный состав:</span>
+                        <div class="products__composition">
+                            <div class="products__composition-item">
+                                <img src="./img/berry.png" alt="">
+                                <span>Клубника</span>
+                            </div>
+                            <div class="products__composition-item">
+                                <img src="./img/berry.png" alt="">
+                                <span>Черника</span>
+                            </div>
+                            <div class="products__composition-item">
+                                <img src="./img/berry.png" alt="">
+                                <span>Мята</span>
+                            </div>
+                            <div class="products__composition-item">
+                                <img src="./img/berry.png" alt="">
+                                <span>Ежевика</span>
+                            </div>
+                        </div>
+                        <a href="" class="btn">Подобрать букет с флористом</a>
+                        <span class="products__btn-suptitle">Закупаем свежие ягоды каждое утро</span>
+                    </div>
+                    <!-- некачественная разметка dots -->
+                    <div class="products__dots">
+                        <ul class="products__list">
+                            <li class="products__dots-item active__dott"></li>
+                            <li class="products__dots-item"></li>
+                            <li class="products__dots-item"></li>
+                            <li class="products__dots-item"></li>
+                            <li class="products__dots-item"></li>
+                        </ul>
+                    </div>
+                    <img src="img/pitahai.png" class="products__img-bottom"></img>
+                    <!-- добавить тени img -->
                 </div>
+                
             </div>
+            
+        </div>
     </section>
-    </div>
     <div class="container">
         <section class="flavor">
             <h2 class="title flavor__title">Букетом цветов уже <span class="mark">не удивишь</span>
