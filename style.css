@@ -157,11 +157,11 @@ a {
 }
 
 .header__subsection {
-    width: 94.25%;
+    width: 800px;
     display: flex;
     position: relative;
     justify-content: flex-end;
-    margin: 0 auto;
+    margin-left: 334px;
     background-color: #fff;
     border-radius: 10px;
 }
@@ -173,22 +173,22 @@ a {
     z-index: 1;
     position: absolute;
     top: 8px;
-    left: 8px;
+    right: 8px;
     border-radius: 10px;
     border: 3px solid #CCCCCC;
 }
 
 .header__img {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -50px;
+    left: -270px;
     width: calc(566px - 29px);
     z-index: 2;
 }
 
 
 .header__desc {
-    width: calc(50% + 148px);
+    width: 500px;
     /* padding-left: 148px; */
     padding-top: 43px;
     /* flex-shrink: -1; */
@@ -440,6 +440,7 @@ a {
     color: white;
     font-size: 24px;
     padding-top: 50px;
+    padding-bottom: 160px;
 }
 
 .flavor__wrap {
@@ -578,7 +579,7 @@ a {
     margin: 0 auto;
     justify-content: center;
     color: #fff;
-    background-color: red;
+    background-color: rgba(255, 88, 121, 0.8);
     text-align: right;
 }
 
@@ -600,11 +601,23 @@ a {
 
 .video__btn {
     display: block;
+    position: relative;
     min-width: 225px;
     min-height: 225px;
     border-radius: 100%;
-    background-color: #FD83BD;
+    background: radial-gradient(57.74% 90.4% at 50% -24.24%, #FD83BD 0%, #FF4B65 100%);
+    box-shadow: 0px 0px 50px rgba(255, 88, 121, 0.8);
+}
 
+.video__btn::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 25%;
+    left: 26%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(./img/svg/triangle.svg);
 }
 
 .video__desc {
@@ -617,9 +630,10 @@ a {
 .order {
     display: flex;
     /* width: 1010px; */
-    /* justify-content: center; */
+    justify-content: center;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 108px;
+    /* исправить маргин */
 }
 
 .order__form {
@@ -714,10 +728,11 @@ a {
 }
 
 .order__img-bg {
-    top: -30px;
-    width: 480px;
-    left: -116px;
+    top: -53px;
+    width: 636px;
+    left: -153px;
     position: absolute;
+    /* найти другое решиние */
 }
 
 /* ADVICE */
@@ -832,20 +847,23 @@ a {
 
 .fast-order__slider {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
 }
 
 .fast-order__cart {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 350px;
     /* border: 5px solid black; */
     border-radius: 25px;
     background-color: #fff;
     color: black;
-    text-align: center;
     padding: 14px 14px 40px 14px;
     margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 .fast-order__img {
@@ -881,13 +899,59 @@ a {
 }
 
 
+.fast-order__dots{
+    flex-basis: 100%;
+}
+
+.fast-order__list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fast-order__item{
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 49px;
+    height: 49px;
+    margin-right: 7px;
+    color: #FF4B65;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 49px;
+}
+
+.fast-order__item:nth-child(1){
+    width: 228px;
+    border-radius: 100px;
+}
+
 /* MAIN-ORDER */
+.bg-wrap {
+    width: 100%;
+    position: relative;
+    padding-top: 124px;
+    padding-bottom: 76px;
+    }
+
+.bg-wrap::before {
+    content: '';
+    position: absolute;
+    /* position: fixed; Фиксируем на одном месте */
+    left: 0; right: 0; /* Вся ширин */
+    top: 0; bottom: 0; /* Вся высота */
+    z-index: -1; /* Фон ниже текста */
+    /* Параметры фона */
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(./img/main-form-clients-bg.png);
+    filter: blur(5px); /* Размытие */
+   }
 
 .main-form {
     display: flex;
     color: #fff;
     width: 1150px;
-    margin:  124px auto 70px auto;
+    margin:  0 auto 70px auto;
     background-color: #FD83BD;
     padding: 50px;
     border-radius: 25px;
@@ -983,6 +1047,7 @@ a {
 .clients__title {
     width: 780px;
     height: 154px;
+    margin-bottom: 36px;
 }
 
 .clients__inner {
@@ -1011,11 +1076,13 @@ a {
     z-index: 1000;
 }
 
-.faq {
-    margin-top: 50px;
-}
 
 /* FAQ */
+
+
+.faq {
+    padding-top: 50px;
+}
 
 .faq__title{}
 

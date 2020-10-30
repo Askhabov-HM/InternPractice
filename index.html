@@ -11,6 +11,8 @@
 <body>
     <!-- TOP -->
     <!-- пересмотреть то как добавлен лист -->
+    <!-- как ровнять текст без line-height -->
+    <!-- слишком большие SVG -->
     <section class="top">
         <div class="container">
             <div class="top__wrap">
@@ -21,14 +23,12 @@
                 <div class="top__wrap-left">
                     <a href="" class="top__action">Заказать в один клик</a>
                     <!-- before phone icon -->
-                    <!-- переделать все span с телеоном на ссылку -->
                     <a href="" class="top__phone">8 (999) 888-99-88</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- NAVIGATION -->
-    <!-- разобраться с position -->
     <div class="container">
         <nav class="nav">
             <a href="#" class="nav__item">Главная</a>
@@ -43,35 +43,32 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container">
-        <!-- add background -->
             <h1 class="title header__title">Сделайте экзотичный подарок для неё: <span class="mark">Жене</span> </h1>
             <div class="header__subsection">
-                <img src="./img/букет-хедер.png" alt="" class="header__img">
+                <!-- криво сделан отступ слева -->
+                <img src="./img/header-main-img.png" alt="" class="header__img">
                 <div class="header__desc">
                     <h2 class="header__subtitle">Авторские букеты из спелых ягод и фруктов</h2>
                     <a href="" class="btn">Подобрать подарок</a>
-                    <!--add icon before p  -->
                     <p class="header__delivery">Бесплатная доставка по Москве</p>
                 </div>
             </div>
         </div>
     </header>
     <!-- PRODUCTS -->
-        <!-- add bg-img -->
-        <!-- добавить стрелки -->
     <section class="products">
         <div class="container">
             <h2 class="title products__title">Что вы можете заказать в нашей фруктовой лавке?</h2>
             <div class="products__slider">
                 <div class="products__slider-item">
                     <div class="products__left">
-                        <img src="./img/букет-слайдер.png" alt="" class="products__img">
+                        <img src="./img/flavor-slider.png" alt="" class="products__img">
                         <div class="products__row">
-                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
-                            <img src="./img/букет-слайдер.png" alt="" class="products__row-item">
+                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
+                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
+                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
+                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
+                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
                         </div>
                     </div>
                     <div class="products__right">
@@ -79,9 +76,8 @@
                         <p class="products__desc">«Подарок, который невозможно назвать банальным и невозможно не съесть»</p>
                         <span class="products__variety">Возможный состав:</span>
                         <div class="products__composition">
-                            <!-- поменять картинки ягод -->
                             <div class="products__composition-item">
-                                <img src="./img/berry.png" alt="">
+                                <img src="./img/strawberry.png" alt="">
                                 <span>Клубника</span>
                             </div>
                             <div class="products__composition-item">
@@ -89,11 +85,11 @@
                                 <span>Черника</span>
                             </div>
                             <div class="products__composition-item">
-                                <img src="./img/berry.png" alt="">
+                                <img src="./img/mint.png" alt="">
                                 <span>Мята</span>
                             </div>
                             <div class="products__composition-item">
-                                <img src="./img/berry.png" alt="">
+                                <img src="./img/blackberry.png" alt="">
                                 <span>Ежевика</span>
                             </div>
                         </div>
@@ -111,7 +107,7 @@
                         </ul>
                     </div>
                     <img src="img/pitahai.png" class="products__img-bottom"></img>
-                    <!-- добавить тени img -->
+                    <!-- добавить тени img pitahai-->
                 </div>
                 
             </div>
@@ -173,15 +169,15 @@
                     <div class="order__wrap">
                         <div class="order__item">
                             <img src="" alt="">
-                            <span>телефон</span>
+                            <span>Телефон</span>
                         </div>
                         <div class="order__item">
                             <img src="" alt="">
-                            <span>телеграмм</span>
+                            <span>Telegram</span>
                         </div>
                         <div class="order__item">
                             <img src="" alt="">
-                            <span>вацап</span>
+                            <span>WhatsApp</span>
                         </div>
                     </div>
                 </div>
@@ -262,8 +258,16 @@
                     <span class="fast-order__size">25см</span>
                     <a href="" class="btn">Заказать</a>
                 </div>
+                
+                <div class="fast-order__dots">
+                    <ul class="fast-order__list">
+                        <li class="fast-order__item">Ягодные букеты</li>
+                        <li class="fast-order__item">2</li>
+                        <li class="fast-order__item">3</li>
+                    </ul>
+                </div>
             </div>
-            <!-- добавить dots -->
+            <!-- заглушка dots -->
         </div>
     </section>
     <div class="bg-wrap">
@@ -298,9 +302,9 @@
         </div>
         <div class="clients-wrap">
             <div class="clients">
-                <div class="clients__title title">
+                <h2 class="clients__title title">
                     <span class="mark"> Наши клиенты</span> делятся с нами эмоциями
-                </div>
+                </h2>
                 <div class="clients__inner">
                     <div class="clients__phone">
                         <img src="./img/Frame.png" alt="" class="clients__frame">
@@ -539,7 +543,7 @@
             <h2 class="title end__title">Сайт уже <br > закончился :(</h2>
             <p class="end__desc"><span>Попробуйте заказать</span> что-нибудь из нашей лавки и порадовать своих близких уже сегодня!</p>
             <a href="" class="end__btn btn">Хочу попробовать</a>
-            <img src="./img/Корзина.png" alt="" class="end__img">
+            <img src="./img/basket.png" alt="" class="end__img">
         </section>
     </div>
 
