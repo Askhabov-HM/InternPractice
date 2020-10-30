@@ -28,6 +28,7 @@
         </div>
     </section>
     <!-- NAVIGATION -->
+    <!-- разобраться с position -->
     <div class="container">
         <nav class="nav">
             <a href="#" class="nav__item">Главная</a>
@@ -78,6 +79,7 @@
                         <p class="products__desc">«Подарок, который невозможно назвать банальным и невозможно не съесть»</p>
                         <span class="products__variety">Возможный состав:</span>
                         <div class="products__composition">
+                            <!-- поменять картинки ягод -->
                             <div class="products__composition-item">
                                 <img src="./img/berry.png" alt="">
                                 <span>Клубника</span>
@@ -124,22 +126,30 @@
             <div class="flavor__wrap">
                 <img src="./img//flavor.png" alt="" class="flavor__img">
                 <div class="flavor__notice first">
-                    <div class="flavor__round icon-1"></div>
-                    <p class="flavor__desc">Ягоды гораздо фотогениченее,
+                    <div class="flavor__round icon-1">
+                        <img src="./img/svg/camera.svg" alt="" class="flavor__round-img">
+                    </div>
+                    <p class="flavor__desc">Ягоды гораздо <span class="flavor__desc-bold">фотогениченее</span>,
                         чем цветы. Ваши подарки точно попадут в instagram ;)</p>
                 </div>
                 <div class="flavor__notice second">
-                    <div class="flavor__round icon-2"></div>
-                    <p class="flavor__desc">Цветы чаще всего из вашего города, а наши фрукты и ягоды из Южной Америки</p>
+                    <div class="flavor__round icon-2">
+                        <img src="./img/svg/earth.svg" alt="" class="flavor__round-img">
+                    </div>
+                    <p class="flavor__desc">Цветы чаще всего из вашего города, а наши фрукты и ягоды из <span class="flavor__desc-bold">Южной Америки</span></p>
                 </div>
                 <div class="flavor__notice third">
-                    <div class="flavor__round icon-3"></div>
-                    <p class="flavor__desc">Весь букет съедят! а не выбросят
+                    <div class="flavor__round icon-3">
+                        <img src="./img/svg/like.svg" alt="" class="flavor__round-img">
+                    </div>
+                    <p class="flavor__desc">Весь букет съедят! а <span class="flavor__desc-bold">не выбросят</span>
                         как засохшие цветы</p>
                 </div>
                 <div class="flavor__notice fourth">
-                    <div class="flavor__round icon-4"></div>
-                    <p class="flavor__desc">Букет не только пахнет, но и полезен витаминчиками</p>
+                    <div class="flavor__round icon-4">
+                        <img src="./img/svg/health.svg" alt="" class="flavor__round-img">
+                    </div>
+                    <p class="flavor__desc">Букет не только пахнет, но и <span class="flavor__desc-bold">полезен витаминчиками</span></p>
                 </div>
             </div>
         </section>
@@ -271,7 +281,7 @@
                         <button class="main-form__btn">Перезвоните мне</button>
                         <!-- разоабраться с переносом -->
                         <div class="main-form__contacts">
-                            <span class="main-form__phone">8 (999) 888-99-88</span>
+                            <a class="main-form__phone">8 (999) 888-99-88</a>
                             <p class="write">или напишите нам</p>
                             <img src="" alt="" class="main-form__society">
                             <img src="" alt="" class="main-form__society">
@@ -547,7 +557,7 @@
             <img src="./img/logo.png" alt="" class="footer__img">
             <div class="footer__contacts">
                 <ul class="footer__left">
-                    <li class="footer__left-item footer__left-phone">8 (999) 888-99-88</li>
+                    <li class="footer__left-item footer__left-phone"><a>8 (999) 888-99-88</a></li>
                     <li class="footer__left-item footer__left-action"><a href="">Заказать в один клик</a></li>
                     <li class="footer__left-item footer__left-mail">@mymarket_moscow</li>
                     <li class="footer__left-item footer__left-address">Адрес: <span>Москва, ул. лалалал</span></li>
