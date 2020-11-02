@@ -11,9 +11,8 @@
 <body>
     <!-- TOP -->
     <!-- пересмотреть то как добавлен лист -->
-    <!-- как ровнять текст без line-height -->
-    <!-- слишком большие SVG -->
     <section class="top">
+        <img src="./img/top-left.png" alt="" class="top__leaf-left-top">
         <div class="container">
             <div class="top__wrap">
                 <div class="top__wrap-right">
@@ -44,9 +43,8 @@
         <div class="container">
             <h1 class="title header__title">Сделайте экзотичный подарок для неё: <span class="mark">Жене</span> </h1>
             <div class="header__subsection">
-                <!-- криво сделан отступ слева -->
-                <!-- как правильно сделать размытый фон -->
                 <img src="./img/header-main-img.png" alt="" class="header__img">
+                <img src="./img/header-main-img-blur.png" alt="" class="header__img-blur">
                 <div class="header__desc">
                     <h2 class="header__subtitle">Авторские букеты из спелых ягод и фруктов</h2>
                     <a href="" class="btn">Подобрать подарок</a>
@@ -61,14 +59,19 @@
             <h2 class="title products__title">Что вы можете заказать в нашей фруктовой лавке?</h2>
             <div class="products__slider">
                 <div class="products__slider-item">
+                    <img src="./img/svg/arrow.svg" alt="" class="products__slider-left-arrow">
+                    <img src="./img/svg/arrow.svg" alt="" class="products__slider-right-arrow">
+                    <img src="./img/leaf.png" alt="" class="products__top-right-img">
                     <div class="products__left">
                         <img src="./img/flavor-slider.png" alt="" class="products__img">
                         <div class="products__row">
+                            <img src="./img/svg/accordion-arrow.svg" alt="" class="products__row-left-arrow">
+                            <img src="./img/svg/accordion-arrow.svg" alt="" class="products__row-right-arrow">
                             <img src="./img/flavor-slider.png" alt="" class="products__row-item">
-                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
-                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
-                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
-                            <img src="./img/flavor-slider.png" alt="" class="products__row-item">
+                            <img src="./img/products-listitem-2.png" alt="" class="products__row-item">
+                            <img src="./img/products-listitem-3.png" alt="" class="products__row-item">
+                            <img src="./img/products-listitem-4.png" alt="" class="products__row-item">
+                            <img src="./img/products-listitem-5.png" alt="" class="products__row-item">
                         </div>
                     </div>
                     <div class="products__right">
@@ -96,7 +99,6 @@
                         <a href="" class="btn">Подобрать букет с флористом</a>
                         <span class="products__btn-suptitle">Закупаем свежие ягоды каждое утро</span>
                     </div>
-                    <!-- некачественная разметка dots -->
                     <div class="products__dots">
                         <ul class="products__list">
                             <li class="products__dots-item active__dott"></li>
@@ -106,19 +108,16 @@
                             <li class="products__dots-item"></li>
                         </ul>
                     </div>
-                    <img src="img/pitahai.png" class="products__img-bottom"></img>
-                    <!-- добавить тени img pitahai-->
+                    <img src="img/pitahai.png" class="products__img-bottom">
                 </div>
-                
+                <img src="./img/leaf.png" alt="" class="products__bottom-left-img">
             </div>
-            
         </div>
     </section>
     <div class="container">
         <section class="flavor">
             <h2 class="title flavor__title">Букетом цветов уже <span class="mark">не удивишь</span>
                 А у нас:</h2>
-            <!--стоит ли менять классы first__notice на nth-child(1) и т.д ???  -->
             <div class="flavor__wrap">
                 <img src="./img//flavor.png" alt="" class="flavor__img">
                 <div class="flavor__notice first">
@@ -151,19 +150,59 @@
         </section>
     </div>
     <section class="video">
+        <svg class="video__svg-bg" width="100%" height="204" viewBox="0 0 100% 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g>
+            <path d="M0 5.5L1920 17V119.181C1509.34 202.696 1375 -58.3856 935.366 119.181C495.731 296.747 365.049 -64.8719 0 31.1479V5.5Z" fill="white"/>
+            </g>
+            <defs>
+            <filter x="-20" y="0.5" width="1960" height="203.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="15"/>
+            <feGaussianBlur stdDeviation="10"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+        <img src="./img/leaf.png" alt="" class="video__leaf-top">
         <div class="video__wrap container">
             <h2 class="video__title">My Market — искусство
                 радовать любимых</h2>
             <div class="video__right">
                 <a class="video__btn"></a>
+                <img src="./img//svg/video-arrow.svg" alt="" class="video__arrow">
+                <div class="video__timeline">
+                    <span class="video__timeline-item">00:59</span>
+                </div>
                 <p class="video__desc">Посмотрите видео о том, как мы создаем букеты</p>
             </div>
         </div>
     </section>
     <div class="order-wrap">
+        <svg  class="order-wrap__svg-bg" width="100%" height="1002" viewBox="0 0 100% 1002" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_d)">
+            <path d="M1920 997H0V89.8191C410.664 6.30385 545 267.386 984.634 89.8191C1424.27 -87.7474 1554.95 232.02 1920 136V997Z" fill="#FF4B65"/>
+            </g>
+            <defs>
+            <filter id="filter0_d" x="-20" y="0.0932617" width="1960" height="1001.91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="-15"/>
+            <feGaussianBlur stdDeviation="10"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+            </filter>
+            </defs>
+        </svg>
+            
+            
         <div class="container">
             <section class="order">
                 <div class="order__form">
+                    <img src="./img/leaf.png" alt="" class="order__form-leaf">
                     <h3 class="order__title">Наш флорист <span class="order__title-bold">подберет</span> для Вас подарок по цене, размеру и составу</h3>
                     <div class="order__social">
                         <span class="order__suptitle">Выберите удобный способ связи</span>
@@ -188,7 +227,6 @@
                     </form>
                     <p class="order__rules">Нажимая кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</p>
                 </div>
-                <!-- временное решение-->
                 <div class="order__img">
                     <img src="./img/fast-order__img.png" alt="" class="order__img-bg">
                 </div>
@@ -197,7 +235,6 @@
     </div>
     <div class="container">
         <!-- Правильные вертикальные отступы у advice__desc -->
-        <!-- вместо jsc-saround применить margin -->
         <section class="advice">
             <h2 class="title advice__title">Будьте оригинальными с My Market <br/><span>Мы советуем:</span></h2>
             <img src="./img/advice__border.svg" alt="" class="advice__border">
@@ -233,6 +270,7 @@
             <h2 class="title fast-order__title">Закажите прямо сейчас и мы доставим до двери</h2>
             <p class="fast-order__subtitle">Доставка по Москве в пределах МКАД  бесплатно!</p>
             <div class="fast-order__slider">
+                <img src="./img/svg/accordion-arrow.svg" alt="" class="fast-order__left-arrow">
                 <div class="fast-order__cart">
                     <img src="./img/adelina.png" alt="" class="fast-order__img">
                     <span class="fast-order__name">Букет «Аделина»</span>
@@ -260,7 +298,6 @@
                     <span class="fast-order__size">25см</span>
                     <a href="" class="btn">Заказать</a>
                 </div>
-                
                 <div class="fast-order__dots">
                     <ul class="fast-order__list">
                         <li class="fast-order__item">Ягодные букеты</li>
@@ -268,13 +305,15 @@
                         <li class="fast-order__item">3</li>
                     </ul>
                 </div>
+                <img src="./img/svg/accordion-arrow.svg" alt="" class="fast-order__right-arrow">
             </div>
-            <!-- заглушка dots -->
         </div>
     </section>
     <div class="bg-wrap">
         <div class="container">
             <section class="main-form">
+                <img src="./img/leaf.png" alt="" class="main-form__right-leaf">
+                <img src="./img/leaf.png" alt="" class="main-form__left-leaf">
                 <!-- как сделать два фона -->
                 <div class="main-form__left">
                     <h2 class=" title main-form__title">Если вам ничего не понравилось</h2>
@@ -286,7 +325,6 @@
                         <input type="text" class="main-form__input">
                         <textarea name="" id="" cols="30" rows="10" class="main-form__textarea"></textarea>
                         <button class="main-form__btn">Перезвоните мне</button>
-                        <!-- разоабраться с переносом -->
                         <div class="main-form__contacts">
                             <a class="main-form__phone">8 (999) 888-99-88</a>
                             <p class="main-form__write">или напишите нам</p>
@@ -302,26 +340,44 @@
                 </div>
                 <img src="./img/blueberry.png" alt="" class="main-form__img">
             </section>
-            <section class="clients"></section>
         </div>
         <div class="clients-wrap">
-            <div class="clients">
+            <section class="clients">
                 <h2 class="clients__title title">
                     <span class="mark"> Наши клиенты</span> делятся с нами эмоциями
                 </h2>
                 <div class="clients__inner">
+                    <img src="./img/svg/clients-like.svg" alt="" class="clients__img-like">
+                    <img src="./img/svg/clients-like.svg" alt="" class="clients__img-like-2">
+                    <img src="./img/svg/clients-hart.svg" alt="" class="clients__img-hart">
+                    <img src="./img/svg/clients-hart.svg" alt="" class="clients__img-hart-2">
+                    <svg class="clients__arrow-left" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.938 34.0621C22.7983 33.9227 22.6875 33.7572 22.6119 33.575C22.5362 33.3927 22.4973 33.1974 22.4973 33.0001C22.4973 32.8028 22.5362 32.6074 22.6119 32.4252C22.6875 32.2429 22.7983 32.0774 22.938 31.9381L29.3785 25.5H15C14.6022 25.5 14.2206 25.342 13.9393 25.0607C13.658 24.7794 13.5 24.3978 13.5 24C13.5 23.6022 13.658 23.2206 13.9393 22.9393C14.2206 22.658 14.6022 22.5 15 22.5H29.3784L22.938 16.0621C22.7985 15.9226 22.6879 15.757 22.6124 15.5748C22.5369 15.3926 22.4981 15.1973 22.4981 15.0001C22.4981 14.8028 22.5369 14.6075 22.6124 14.4253C22.6879 14.2431 22.7985 14.0775 22.938 13.9381C23.0775 13.7986 23.243 13.688 23.4252 13.6125C23.6075 13.537 23.8028 13.4982 24 13.4982C24.1972 13.4982 24.3925 13.537 24.5747 13.6125C24.757 13.688 24.9225 13.7986 25.062 13.9381L34.062 22.9381C34.2017 23.0774 34.3125 23.2429 34.3881 23.4252C34.4638 23.6074 34.5027 23.8028 34.5027 24.0001C34.5027 24.1974 34.4638 24.3927 34.3881 24.575C34.3125 24.7572 34.2017 24.9227 34.062 25.0621L25.062 34.0621C24.9227 34.2018 24.7571 34.3126 24.5749 34.3882C24.3927 34.4638 24.1973 34.5027 24 34.5027C23.8027 34.5027 23.6073 34.4638 23.4251 34.3882C23.2429 34.3126 23.0773 34.2018 22.938 34.0621Z" fill="#FF4B65"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C30.3652 48 36.4697 45.4714 40.9706 40.9706C45.4714 36.4697 48 30.3652 48 24C48 17.6348 45.4714 11.5303 40.9706 7.02944C36.4697 2.52856 30.3652 0 24 0C17.6348 0 11.5303 2.52856 7.02944 7.02944C2.52856 11.5303 0 17.6348 0 24C0 30.3652 2.52856 36.4697 7.02944 40.9706C11.5303 45.4714 17.6348 48 24 48ZM24 45C29.5695 45 34.911 42.7875 38.8492 38.8492C42.7875 34.911 45 29.5695 45 24C45 18.4305 42.7875 13.089 38.8492 9.15076C34.911 5.21249 29.5695 3 24 3C18.4305 3 13.089 5.21249 9.15076 9.15076C5.21249 13.089 3 18.4305 3 24C3 29.5695 5.21249 34.911 9.15076 38.8492C13.089 42.7875 18.4305 45 24 45Z" fill="#FF4B65"/>
+                    </svg>
+                    <svg class="clients__arrow-right" width="48" height="48" viewBox="0 0 48 48" fill="red" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.938 34.0621C22.7983 33.9227 22.6875 33.7572 22.6119 33.575C22.5362 33.3927 22.4973 33.1974 22.4973 33.0001C22.4973 32.8028 22.5362 32.6074 22.6119 32.4252C22.6875 32.2429 22.7983 32.0774 22.938 31.9381L29.3785 25.5H15C14.6022 25.5 14.2206 25.342 13.9393 25.0607C13.658 24.7794 13.5 24.3978 13.5 24C13.5 23.6022 13.658 23.2206 13.9393 22.9393C14.2206 22.658 14.6022 22.5 15 22.5H29.3784L22.938 16.0621C22.7985 15.9226 22.6879 15.757 22.6124 15.5748C22.5369 15.3926 22.4981 15.1973 22.4981 15.0001C22.4981 14.8028 22.5369 14.6075 22.6124 14.4253C22.6879 14.2431 22.7985 14.0775 22.938 13.9381C23.0775 13.7986 23.243 13.688 23.4252 13.6125C23.6075 13.537 23.8028 13.4982 24 13.4982C24.1972 13.4982 24.3925 13.537 24.5747 13.6125C24.757 13.688 24.9225 13.7986 25.062 13.9381L34.062 22.9381C34.2017 23.0774 34.3125 23.2429 34.3881 23.4252C34.4638 23.6074 34.5027 23.8028 34.5027 24.0001C34.5027 24.1974 34.4638 24.3927 34.3881 24.575C34.3125 24.7572 34.2017 24.9227 34.062 25.0621L25.062 34.0621C24.9227 34.2018 24.7571 34.3126 24.5749 34.3882C24.3927 34.4638 24.1973 34.5027 24 34.5027C23.8027 34.5027 23.6073 34.4638 23.4251 34.3882C23.2429 34.3126 23.0773 34.2018 22.938 34.0621Z" fill="#FF4B65"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C30.3652 48 36.4697 45.4714 40.9706 40.9706C45.4714 36.4697 48 30.3652 48 24C48 17.6348 45.4714 11.5303 40.9706 7.02944C36.4697 2.52856 30.3652 0 24 0C17.6348 0 11.5303 2.52856 7.02944 7.02944C2.52856 11.5303 0 17.6348 0 24C0 30.3652 2.52856 36.4697 7.02944 40.9706C11.5303 45.4714 17.6348 48 24 48ZM24 45C29.5695 45 34.911 42.7875 38.8492 38.8492C42.7875 34.911 45 29.5695 45 24C45 18.4305 42.7875 13.089 38.8492 9.15076C34.911 5.21249 29.5695 3 24 3C18.4305 3 13.089 5.21249 9.15076 9.15076C5.21249 13.089 3 18.4305 3 24C3 29.5695 5.21249 34.911 9.15076 38.8492C13.089 42.7875 18.4305 45 24 45Z" fill="#FF4B65"/>
+                    </svg>
                     <div class="clients__phone">
                         <img src="./img/Frame.png" alt="" class="clients__frame">
                         <img src="./img/Device.png" alt="" class="clients__camera">
                         <img src="./img/screen.png" alt="" class="clients__screen">
                     </div>
-
+                    <div class="clients__dots">
+                        <span class="clients__dots-item clients__dots-active" ></span>
+                        <span class="clients__dots-item"></span>
+                        <span class="clients__dots-item"></span>
+                        <span class="clients__dots-item"></span>
+                        <span class="clients__dots-item"></span>
+                        <span class="clients__dots-item"></span>
+                    </div>
                 </div>
-                <div class="clients-dots"></div>
-            </div>
+            </section>
         </div>
     </div>
     <section class="faq container">
+        <img src="./img/faq-left.png" alt="" class="faq__left-flavor">
         <h2 class=" title faq__title"><span class="mark">Частые вопросы</span> перед покупкой</h2>
         <div class="faq__item">
             <img src="./img/svg/money.svg" alt="" class="faq__icon">
@@ -349,9 +405,11 @@
             <h3 class="faq__question">Можно ли самому и откуда забрать заказ?</h3>
             <img src="./img/svg/accordion-arrow.svg" alt="" class="faq__arrow">
         </div>
+        <span class="faq__bg-question">?</span>
+        <span class="faq__bg-question-2">?</span>
     </section>
     
-    <section class="steps ">
+    <section class="steps">
         <div class="container">
             <h2 class="steps__title title">Заказывайте легко</h2>
             <div class="steps__row">
@@ -397,11 +455,7 @@
             <a href="" class="end__btn btn">Хочу попробовать</a>
         </section>
         <img src="./img/basket.png" alt="" class="end__img">
-        <!-- исправить позиционирование img -->
     </div>
-
-    <!-- Стоить ли переделывать списки во что-то другое -->
-    <!-- + правильно ли помещать ссылку внутр LI -->
     <footer class="footer">
         <div class="container">
             <div class="footer__rules">
@@ -411,7 +465,7 @@
                     <li class="footer__right-item">© My Market 2014-2020</li>
                 </ul>
             </div>
-            <img src="./img/logo.png" alt="" class="footer__img">
+            <img src="./img/footer-logo.png" alt="" class="footer__img">
             <div class="footer__contacts">
                 <ul class="footer__left">
                     <li class="footer__left-item footer__left-phone"><a>8 (999) 888-99-88</a></li>
