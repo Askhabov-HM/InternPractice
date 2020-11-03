@@ -203,7 +203,7 @@ a:hover, button:hover{
     content: '';
     width: calc(100% - 20px);
     height: calc(100% - 20px);
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -216,7 +216,7 @@ a:hover, button:hover{
     top: -50px;
     left: -270px;
     width: calc(566px - 29px);
-    z-index: 3;
+    z-index: 30;
 }
 
 .header__img-blur {
@@ -224,7 +224,7 @@ a:hover, button:hover{
     top: 70px;
     left: -270px;
     width: calc(566px);
-    z-index: 2;
+    z-index: 20;
 }
 
 .header__desc {
@@ -307,7 +307,7 @@ a:hover, button:hover{
     background-color: #FFFFFF;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     border-radius: 25px;
-    z-index: 2;
+    z-index: 20;
 }
 
 .products__slider-left-arrow, .products__slider-right-arrow {
@@ -498,17 +498,50 @@ a:hover, button:hover{
     position: absolute;
     bottom: -90px;
     right: -138px;
-    z-index: 3;
+    z-index: 30;
+}
+
+.products__img-bottom-shadow{
+    z-index: 29;
+    position: absolute;
+    width: 135px;
+    height: 10px;
+    content: "";
+    border-radius: 50%;
+    bottom: -36px;
+    right: -92px;
+    box-shadow: 0 20px 10px rgba(0,0,0,0.4);
 }
 
 .products__bottom-left-img{
     width: 260px;
     position: absolute;
-    bottom: -66px;
-    left: -27px;
-    z-index: 1;
+    bottom: -63px;
+    left: -15px;
+    z-index: 10;
     filter: blur(5px);
     transform: matrix(0.85, 0.52, 0.52, -0.85, 0, 0);
+}
+
+.products__slider-item-second {
+    width: 966px;
+    height: 9px;
+    background: #E5E5E5;
+    z-index: 19;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 0 0 65px 65px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+}
+
+.products__slider-item-third{
+    width: 916px;
+    height: 8px;
+    background: #CCCCCC;
+    z-index: 18;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 0 0 65px 65px;
 }
 
 /* FLAVOR */
@@ -525,10 +558,10 @@ a:hover, button:hover{
 .flavor__wrap {
     width: 644px;
     height: 644px;
-    border-radius: 100%;
-    border: 3px solid red;
     position: relative;
     margin: 0 auto;
+    background-image: url(./img/flavor.png);
+    background-size: contain;
 }
 
 .flavor__title {
@@ -547,7 +580,6 @@ a:hover, button:hover{
     display: block;
     position: relative;
     margin: 0 auto;
-    /* background-color: rgb(147, 236, 119); */
 }
 
  
@@ -561,27 +593,14 @@ a:hover, button:hover{
 }
 
 .flavor__round {
-    width: 65px;
-    height: 65px;
+    width: 81px;
+    height: 81px;
     z-index: 100;
     background-color: #fff;
     /* сделать прозрачный бордер */
-    border: 8px solid  rgba(190, 100, 100, 0.7);
+    border: 8px solid  rgba(150, 36, 36, 0.1);
     border-radius: 100%;
     position: absolute;
-}
-
-
-.flavor__round-img {
-    margin: 13px;
-}
-
-.icon-2 .flavor__round-img{
-    margin: 11px;
-}
-
-.icon-3 .flavor__round-img{
-    margin: 15px 16px;
 }
 
 .flavor__desc {
@@ -597,7 +616,6 @@ a:hover, button:hover{
     content: '';
     width: calc(100% - 16px);
     height: calc(100% - 16px);
-    /* z-index: 1; */
     position: absolute;
     top: 6px;
     left: 6px;
@@ -605,51 +623,80 @@ a:hover, button:hover{
     border: 2px solid #fff;
 }
 
+
 .flavor__desc-bold {
     font-size: 24px;
     font-weight: bold;
 }
 
-.icon-1 {
-    bottom: -35px;
-    right: -35px;
-}
 
-.icon-2{
-    bottom: -33px;
-    left: -35px;
-}
-
-.icon-3{
-    top: -45px;
-    right: -37px;
-}
-
-.icon-4{
-    top: -45px;
-    left: -37px;
-}
-
-
-.first {
+.first-notice {
     top: 70px;
     left: -192px;
 }
 
-.second {
+.second-notice {
     top: 30px;
     right: -193px;
 }
 
-.third {
+.third-notice {
     bottom: 82px;
     left: -192px;
 }
 
-.fourth {
+.fourth-notice {
     bottom: 134px;
     right: -193px;
 }
+
+.flavor__round-first,
+.flavor__round-second,
+.flavor__round-third,
+.flavor__round-fourth {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+.flavor__round-first {
+    bottom: -43px;
+    right: -43px;
+    background-image: url(./img/svg/camera.svg);
+}
+
+.flavor__round-second {
+    background-image: url(./img/svg/earth.svg);
+    bottom: -41px;
+    left: -43px;
+}
+
+.flavor__round-third {
+    background-image: url(./img/svg/like.svg);
+    top: -53px;
+    right: -46px;
+    
+}
+
+.flavor__round-fourth {
+    background-image: url(./img/svg/health.svg);
+    top: -53px;
+    left: -45px;
+}
+
+.icon-2{
+    
+}
+
+.icon-3{
+    
+}
+
+.icon-4{
+    
+}
+
+
 
 /* VIDEO */
 
@@ -708,7 +755,7 @@ a:hover, button:hover{
 .video__btn {
     display: block;
     position: relative;
-    margin-left: 80px;
+    margin-left: 91px;
     min-width: 225px;
     min-height: 225px;
     border-radius: 100%;
@@ -755,18 +802,22 @@ a:hover, button:hover{
 
 /* ORDER */
 
-.order-wrap {
+.order-wrapper {
     /* background-image: linear-gradient(to top, rgba(255, 75, 101, 0.7), rgba(255, 75, 101, 0.7)), url(./img/order-bg.png); */
     padding-top: 160px;
     padding-bottom: 90px;
     position: relative;
 }
 
-.order-wrap__svg-bg{
+.order-wrapper__svg-bg{
     position: absolute;
     bottom: -5px;
-    left: 0;
+    left: 0;   
 }
+
+.order-wrapper__svg-bg path{
+    fill: #FF4B65;
+}  
 
 .order {
     display: flex;
@@ -776,14 +827,34 @@ a:hover, button:hover{
     margin: 0 auto;
 }
 
-.order__form {
+.order__form{
+    
+}
+
+.order__form-item {
     width: 380px;
-    margin-right: 110px;
     border-radius: 25px;
     padding: 40px;
     position: relative;
     background-color: #fff;
 }
+
+.order__form-item-second {
+    width: 414px;
+    height: 10px;
+    margin: 0  auto;
+    background: #E5E5E5;
+    border-radius: 0 0 65px 65px;
+}
+
+.order__form-item-third {
+    width: 374px;
+    height: 10px;
+    margin: 0  auto;
+    background: #CCCCCC;;
+    border-radius: 0 0 65px 65px;
+}
+
 
 .order__form-leaf {
     position: absolute;
@@ -877,6 +948,7 @@ a:hover, button:hover{
 
 .order__img {
     width: 460px;
+    margin-left: 110px;
     min-height: 50px;
     border-radius: 54px;
     position: relative;
@@ -1188,14 +1260,14 @@ a:hover, button:hover{
 .main-form__form {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .main-form__input {
-    width: 230px;
-    height: 60px;
+    width: 192px;
+    height: 22px;
     margin-bottom: 10px;
-    /* padding: 19px; */
-    
+    padding: 19px;
 }
 
 .main-form__input:nth-child(1){
@@ -1203,6 +1275,7 @@ a:hover, button:hover{
 }
 
 .main-form__input, .main-form__textarea{
+    color: #ccc;
     border-radius: 5px;
     border: none;
     background-color: #F8F8F8;
@@ -1210,9 +1283,9 @@ a:hover, button:hover{
 }
 
 .main-form__textarea {
-    width: 469px;
-    height: 100px;
-    border-radius: 5px;
+    width: 425px;
+    height: 64px;
+    padding: 18px 22px;
 }
 
 .main-form__btn {

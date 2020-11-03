@@ -68,7 +68,6 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M24 48C30.3652 48 36.4697 45.4714 40.9706 40.9706C45.4714 36.4697 48 30.3652 48 24C48 17.6348 45.4714 11.5303 40.9706 7.02944C36.4697 2.52856 30.3652 0 24 0C17.6348 0 11.5303 2.52856 7.02944 7.02944C2.52856 11.5303 0 17.6348 0 24C0 30.3652 2.52856 36.4697 7.02944 40.9706C11.5303 45.4714 17.6348 48 24 48ZM24 45C29.5695 45 34.911 42.7875 38.8492 38.8492C42.7875 34.911 45 29.5695 45 24C45 18.4305 42.7875 13.089 38.8492 9.15076C34.911 5.21249 29.5695 3 24 3C18.4305 3 13.089 5.21249 9.15076 9.15076C5.21249 13.089 3 18.4305 3 24C3 29.5695 5.21249 34.911 9.15076 38.8492C13.089 42.7875 18.4305 45 24 45Z"/>
                     </svg>  
                     <img src="./img/leaf.png" alt="" class="products__top-right-img">
-                    <img src="./img/leaf.png" alt="" class="products__bottom-left-img">
                     <div class="products__left">
                         <img src="./img/flavor-slider.png" alt="" class="products__img">
                         <div class="products__row">
@@ -120,7 +119,11 @@
                         </ul>
                     </div>
                     <img src="img/pitahai.png" class="products__img-bottom">
+                    <span class="products__img-bottom-shadow"></span>
                 </div>
+                <div class="products__slider-item-second"></div>
+                <div class="products__slider-item-third"></div>
+                <img src="./img/leaf.png" alt="" class="products__bottom-left-img">
             </div>
         </div>
     </section>
@@ -129,31 +132,22 @@
             <h2 class="title flavor__title">Букетом цветов уже <span class="mark">не удивишь</span>
                 А у нас:</h2>
             <div class="flavor__wrap">
-                <img src="./img//flavor.png" alt="" class="flavor__img">
-                <div class="flavor__notice first">
-                    <div class="flavor__round icon-1">
-                        <img src="./img/svg/camera.svg" alt="" class="flavor__round-img">
-                    </div>
+                <div class="flavor__notice first-notice">
+                    <div class="flavor__round flavor__round-first"></div>
                     <p class="flavor__desc">Ягоды гораздо <span class="flavor__desc-bold">фотогениченее</span>,
                         чем цветы. Ваши подарки точно попадут в instagram ;)</p>
                 </div>
-                <div class="flavor__notice second">
-                    <div class="flavor__round icon-2">
-                        <img src="./img/svg/earth.svg" alt="" class="flavor__round-img">
-                    </div>
+                <div class="flavor__notice second-notice">
+                    <div class="flavor__round flavor__round-second"></div>
                     <p class="flavor__desc">Цветы чаще всего из вашего города, а наши фрукты и ягоды из <span class="flavor__desc-bold">Южной Америки</span></p>
                 </div>
-                <div class="flavor__notice third">
-                    <div class="flavor__round icon-3">
-                        <img src="./img/svg/like.svg" alt="" class="flavor__round-img">
-                    </div>
+                <div class="flavor__notice third-notice">
+                    <div class="flavor__round flavor__round-third"></div>
                     <p class="flavor__desc">Весь букет съедят! а <span class="flavor__desc-bold">не выбросят</span>
                         как засохшие цветы</p>
                 </div>
-                <div class="flavor__notice fourth">
-                    <div class="flavor__round icon-4">
-                        <img src="./img/svg/health.svg" alt="" class="flavor__round-img">
-                    </div>
+                <div class="flavor__notice fourth-notice">
+                    <div class="flavor__round flavor__round-fourth"></div>
                     <p class="flavor__desc">Букет не только пахнет, но и <span class="flavor__desc-bold">полезен витаминчиками</span></p>
                 </div>
             </div>
@@ -190,13 +184,13 @@
             </div>
         </div>
     </section>
-    <div class="order-wrap">
-        <svg  class="order-wrap__svg-bg" width="100%" height="1002" viewBox="0 0 100% 1002" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d)">
-            <path d="M1920 997H0V89.8191C410.664 6.30385 545 267.386 984.634 89.8191C1424.27 -87.7474 1554.95 232.02 1920 136V997Z" fill="#FF4B65"/>
+    <div class="order-wrapper">
+        <svg  class="order-wrapper__svg-bg" width="100%" height="1002" viewBox="0 0 100% 1002"  xmlns="http://www.w3.org/2000/svg">
+            <g>
+            <path d="M1920 997H0V89.8191C410.664 6.30385 545 267.386 984.634 89.8191C1424.27 -87.7474 1554.95 232.02 1920 136V997Z" />
             </g>
             <defs>
-            <filter id="filter0_d" x="-20" y="0.0932617" width="1960" height="1001.91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <filter  x="-20" y="0.0932617" width="1960" height="1001.91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
             <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
             <feOffset dy="-15"/>
@@ -207,35 +201,37 @@
             </filter>
             </defs>
         </svg>
-            
-            
         <div class="container">
             <section class="order">
                 <div class="order__form">
-                    <img src="./img/leaf.png" alt="" class="order__form-leaf">
-                    <h3 class="order__title">Наш флорист <span class="order__title-bold">подберет</span> для Вас подарок по цене, размеру и составу</h3>
-                    <div class="order__social">
-                        <span class="order__suptitle">Выберите удобный способ связи</span>
-                        <div class="order__wrap">
-                            <div class="order__item">
-                                <img src="./img/svg/order-phone.png" alt="">
-                                <span>Телефон</span>
-                            </div>
-                            <div class="order__item">
-                                <img src="./img/svg/telegram.svg" alt="">
-                                <span>Telegram</span>
-                            </div>
-                            <div class="order__item">
-                                <img src="./img/svg/whatsapp.svg" alt="">
-                                <span>WhatsApp</span>
+                    <div class="order__form-item">
+                        <img src="./img/leaf.png" alt="" class="order__form-leaf">
+                        <h3 class="order__title">Наш флорист <span class="order__title-bold">подберет</span> для Вас подарок по цене, размеру и составу</h3>
+                        <div class="order__social">
+                            <span class="order__suptitle">Выберите удобный способ связи</span>
+                            <div class="order__wrap">
+                                <div class="order__item">
+                                    <img src="./img/svg/order-phone.png" alt="">
+                                    <span>Телефон</span>
+                                </div>
+                                <div class="order__item">
+                                    <img src="./img/svg/telegram.svg" alt="">
+                                    <span>Telegram</span>
+                                </div>
+                                <div class="order__item">
+                                    <img src="./img/svg/whatsapp.svg" alt="">
+                                    <span>WhatsApp</span>
+                                </div>
                             </div>
                         </div>
+                        <form action="">
+                            <input type="text" placeholder="введите номер" class="order__input">
+                            <button class="order__btn btn">Оставить заявку</button>
+                        </form>
+                        <p class="order__rules">Нажимая кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</p>
                     </div>
-                    <form action="">
-                        <input type="text" placeholder="введите номер" class="order__input">
-                        <button class="order__btn btn">Оставить заявку</button>
-                    </form>
-                    <p class="order__rules">Нажимая кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</p>
+                    <div class="order__form-item-second"></div>
+                    <div class="order__form-item-third"></div>
                 </div>
                 <div class="order__img">
                     <img src="./img/fast-order__img.png" alt="" class="order__img-bg">
@@ -335,9 +331,9 @@
                 </div>
                 <div class="main-form__right">
                     <form action="" class="main-form__form">
-                        <input type="text" class="main-form__input">
-                        <input type="text" class="main-form__input">
-                        <textarea name="" id="" cols="30" rows="10" class="main-form__textarea"></textarea>
+                        <input type="text" value="Ваше имя" class="main-form__input">
+                        <input type="text" value="+7 (___) ___ __ __" class="main-form__input">
+                        <textarea name="" id="" cols="30" rows="10" class="main-form__textarea">Пожелания по букету...</textarea>
                         <button class="main-form__btn">Перезвоните мне</button>
                         <div class="main-form__contacts">
                             <a class="main-form__phone">8 (999) 888-99-88</a>
