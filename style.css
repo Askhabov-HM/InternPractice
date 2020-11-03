@@ -71,6 +71,7 @@ a:hover, button:hover{
     background-color: #FF4B65;
     position: relative;
 }
+
 .top__leaf-left-top {
     position: absolute;
     top: 0;
@@ -313,6 +314,7 @@ a:hover, button:hover{
     width: 48px;
     height: 48px;
     position: absolute;
+    fill: #fff;
     top: calc(50% - 24px);
 }  
 
@@ -324,18 +326,12 @@ a:hover, button:hover{
 .products__slider-left-arrow:hover,
 .products__slider-right-arrow:hover{
     cursor: pointer;
+    fill: #FCB8A3;
 }
 
 .products__slider-right-arrow {
     right: -78px;
 }
-
-/* переделать стрелки так как не работает наведение */
-/* 
-.products__slider-item:hover::before{
-    cursor: pointer;
-    opacity: 0.5;
-} */
 
 .products__top-right-img{
     width: 180px;
@@ -369,7 +365,7 @@ a:hover, button:hover{
     width: 14px;
     height: 7px;
     top: calc( 50% - 7px);
-    background: #E5E5E5;
+    fill: #E5E5E5;;
 }
 
 .products__row-left-arrow{
@@ -394,13 +390,6 @@ a:hover, button:hover{
 .products__row-item:hover {
     opacity: 1;
 }
-
-
-/* .products__row-item:hover::after{
-    background-color: #fff;
-} */
-
-
 
 .products__right {
     width: 348px;
@@ -568,19 +557,20 @@ a:hover, button:hover{
     height: 123px;
     background-color: #FF4B65; 
     border-radius: 20px;
+    z-index: 10;
 }
 
 .flavor__round {
     width: 65px;
     height: 65px;
-    z-index: 10;
+    z-index: 100;
     background-color: #fff;
     /* сделать прозрачный бордер */
     border: 8px solid  rgba(190, 100, 100, 0.7);
     border-radius: 100%;
-    
     position: absolute;
 }
+
 
 .flavor__round-img {
     margin: 13px;
@@ -1025,6 +1015,11 @@ a:hover, button:hover{
     width: 40px;
     height: 20px;
     top: calc( 50% - 40px);
+    fill: #fff;
+}
+
+.fast-order__left-arrow:hover, .fast-order__right-arrow:hover{
+    fill: #E5E5E5;;
 }
 
 .fast-order__left-arrow{
@@ -1050,7 +1045,7 @@ a:hover, button:hover{
     margin-bottom: 30px;
 }
 
-.fast-order__cart:nth-child(4){
+.fast-order__cart:nth-child(6){
     margin-right: 0;
 }
 
@@ -1347,16 +1342,17 @@ a:hover, button:hover{
     width: 48px;
     height: 48px;
     position: absolute;
-    /* background-color: red; */
+    fill: #FF4B65;
     top: calc(50% - 24px);
 } 
+
+.clients__arrow-left:hover, .clients__arrow-right:hover {
+    fill: #FD83BD;
+}
 
 .clients__arrow-left {
     transform: rotate(-180deg);
     left: -78px;
-}
-.clients__arrow-left:hover {
-    fill: blue;
 }
 
 .clients__arrow-right {
@@ -1436,9 +1432,14 @@ a:hover, button:hover{
     box-shadow: 0px 15px 10px -10px rgba(255, 82, 111, 0.5);
 }
 
-.faq__item-active .faq__arrow{
-    transform: rotate(180deg)
+.faq__arrow{
+    fill: #fff;
 }
+
+.faq__item-active .faq__arrow{
+    transform: rotate(180deg);
+}
+
 .faq__icon{}
 
 .faq__icon-berry{
@@ -1520,8 +1521,8 @@ a:hover, button:hover{
     flex-direction: column;
     justify-content: space-between;
     width: 215px;
-    height: 300px;
     margin: 0 15px;
+    padding: 5px;
     position: relative;
     background-color: #fff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
