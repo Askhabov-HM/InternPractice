@@ -562,6 +562,38 @@ a:hover, button:hover{
     margin: 0 auto;
     background-image: url(./img/flavor.png);
     background-size: contain;
+    border-radius: 100%;
+}
+
+.flavor__wrap::before,
+.flavor__wrap::after{
+    content: "";
+    position: absolute;
+    border: 3px solid #333333;
+    border-radius: 50%;
+    top: 15px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    z-index: -1;
+    animation: pulse .9999s ease-in-out infinite;
+}
+.flavor__wrap::after{
+    animation-delay: .3s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
 }
 
 .flavor__title {
@@ -761,7 +793,38 @@ a:hover, button:hover{
     border-radius: 100%;
     background: radial-gradient(57.74% 90.4% at 50% -24.24%, #FD83BD 0%, #FF4B65 100%);
     box-shadow: 0px 0px 50px rgba(255, 88, 121, 0.8);
+    
 }
+
+
+.video__btn::before{
+    content: "";
+    position: absolute;
+    border: 2px solid #FF4B65;
+    border-radius: 50%;
+    top: -25px;
+    bottom: -25px;
+    left: -25px;
+    right: -25px;
+    z-index: 1;
+    animation: videopulse .9999s ease-in-out infinite;
+}
+
+@keyframes videopulse {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
 
 .video__btn::after {
     content: '';
@@ -1260,7 +1323,6 @@ a:hover, button:hover{
 .main-form__form {
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .main-form__input {
